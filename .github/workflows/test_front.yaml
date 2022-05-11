@@ -12,7 +12,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     env:
-      working-directory: client
+      working-directory: ./client
     defaults:
       run:
         working-directory: ${{ env.working-directory }}
