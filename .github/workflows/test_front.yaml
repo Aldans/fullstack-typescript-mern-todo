@@ -22,7 +22,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Start
         working-directory: ./client
-        run: npm install
+        run: npm ci
       - name: Start test   
         working-directory: ./client
         run: npm test
