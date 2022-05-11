@@ -20,4 +20,5 @@ jobs:
         working-directory: client
         run: |
           npm install
+          npm audit fix --force
           npm test
