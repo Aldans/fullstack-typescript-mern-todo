@@ -12,7 +12,10 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     env:
-      work-directory: client
+      working-directory: client
+    defaults:
+      run:
+        working-directory: ${{ env.working-directory }}
     strategy:
       matrix:
         node-version: [16.15.0]
