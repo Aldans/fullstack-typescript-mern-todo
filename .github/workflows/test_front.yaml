@@ -23,5 +23,5 @@ jobs:
       - name: Start
         working-directory: client
         run: |
-          npm install
+          npm i
           npm test
