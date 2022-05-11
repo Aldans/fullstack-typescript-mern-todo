@@ -5,10 +5,14 @@ on:
   push:
     branches:
       - master
+    paths:
+      - 'client/**'
 
 jobs:
   lint:
     runs-on: ubuntu-latest
+    env:
+      work-directory: client
     strategy:
       matrix:
         node-version: [16.15.0]
