@@ -23,7 +23,6 @@ jobs:
       - name: Start
         working-directory: ./client
         run: npm install
-      
       - name: Start test   
         working-directory: ./client
         run: npm test
